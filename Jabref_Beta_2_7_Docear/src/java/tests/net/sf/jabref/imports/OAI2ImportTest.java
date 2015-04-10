@@ -51,7 +51,7 @@ public class OAI2ImportTest extends TestCase {
 		try {
 			saxParser.parse(this.getClass().getResourceAsStream("oai2.xml"), handler);
 			assertEquals("hep-ph/0408155", be.getField("eprint"));
-			assertEquals("G. F. Giudice and A. Riotto and A. Zaffaroni and J. López-Peña",
+			assertEquals("G. F. Giudice and A. Riotto and A. Zaffaroni and J. LÃ³pez-PeÃ±a",
 				be.getField("author"));
 			assertEquals("Nucl.Phys. B", be.getField("journal"));
 			assertEquals("710", be.getField("volume"));
@@ -83,7 +83,7 @@ public class OAI2ImportTest extends TestCase {
 	public void testOai23xml() throws Throwable {
 		try {
             saxParser.parse(this.getClass().getResourceAsStream("oai23.xml"), handler);
-			assertEquals("Javier López Peña and Gabriel Navarro", be.getField("author").toString());
+			assertEquals("Javier LÃ³pez PeÃ±a and Gabriel Navarro", be.getField("author").toString());
 		} catch (SAXException e) {
 			throw e.getException();
 		}
@@ -122,7 +122,7 @@ public class OAI2ImportTest extends TestCase {
 			assertEquals("math/0612188", be.getField("eprint"));
 			assertEquals("On the classification and properties of noncommutative duplicates", be
 				.getField("title").toString());
-			assertEquals("Javier López Peña and Gabriel Navarro", be.getField("author").toString());
+			assertEquals("Javier LÃ³pez PeÃ±a and Gabriel Navarro", be.getField("author").toString());
 			assertEquals("2007", be.getField("year").toString());
 
 			Thread.sleep(20000);

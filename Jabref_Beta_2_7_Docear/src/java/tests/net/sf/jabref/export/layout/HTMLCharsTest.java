@@ -14,8 +14,8 @@ public class HTMLCharsTest extends TestCase {
 
 		assertEquals("hallo", layout.format("hallo"));
 
-		assertEquals("Réflexions sur le timing de la quantité", layout
-			.format("Réflexions sur le timing de la quantité"));
+		assertEquals("RÃ©flexions sur le timing de la quantitÃ©", layout
+			.format("RÃ©flexions sur le timing de la quantitÃ©"));
 
 		assertEquals("h&aacute;llo", layout.format("h\\'allo"));
 		

@@ -371,8 +371,8 @@ public class OpenDatabaseAction extends MnemonicAwareAction {
     	return buffer.toString();        
     }
         	
-	public static String parseSpecialChars(String s){		
-		s = s.replaceAll("\\\\\"[{]([a-zA-Z])[}]",  "$1" + "\u0308"); // replace äöü
+    public static String parseSpecialChars(String s){	
+            s = s.replaceAll("\\\\\"[{]([a-zA-Z])[}]",  "$1" + "\u0308"); // replace Ã¤Ã¶Ã¼
         s = s.replaceAll("\\\\`[{]([a-zA-Z])[}]",  "$1" + "\u0300"); // replace `        
         s = s.replaceAll("\\\\'[{]([a-zA-Z])[}]",  "$1" + "\u0301"); // replace Ã‚Â´
         s = s.replaceAll("\\\\\\^[{]([a-zA-Z])[}]",  "$1" + "\u0302"); // replace ^

@@ -55,7 +55,7 @@ public class CopacImporterTest extends TestCase {
 		
 		assertEquals("The SIS project : software reuse with a natural language approach", entry.getField("title"));
 		assertEquals(
-			"Prechelt, Lutz and Universit‰t Karlsruhe. Fakult‰t f¸r Informatik",
+			"Prechelt, Lutz and Universit√§t Karlsruhe. Fakult√§t f√ºr Informatik",
 			entry.getField("author"));
 		assertEquals("Interner Bericht ; Nr.2/92", entry.getField("series"));
 		assertEquals("1992", entry.getField("year"));
